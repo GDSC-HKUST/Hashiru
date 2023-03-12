@@ -200,8 +200,8 @@ export default async function Home() {
                     await fetch("https://restcountries.com/v3.1/all").then(
                       (x) => x.json()
                     )
-                  ).map((x: any) => (
-                    <option key={x.ccn3} value={x.cca2}>
+                  ).map((x: any, i: number) => (
+                    <option key={i} value={x.cca2}>
                       {x.flag} {x.name.official}
                     </option>
                   ))}
@@ -232,6 +232,21 @@ export default async function Home() {
                   placeholder="Bachelor in Business Administration"
                   required
                 />
+              </div>
+              <div className="w-full">
+                <label htmlFor="role" className="font-semibold">
+                  Tenant Role (HKUST)
+                </label>
+                <select
+                  id="role"
+                  name="role"
+                  className="block w-full p-2 mt-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-sm"
+                  defaultValue="admin"
+                >
+                  <option value="admin">Admin</option>
+                  <option value="judge">Judge</option>
+                  <option value="default">Default</option>
+                </select>
               </div>
             </div>
             <div className="flex flex-col w-full gap-2">
