@@ -10,6 +10,7 @@ import {
   ServerStackIcon,
   UsersIcon,
 } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -676,15 +677,16 @@ export default function Home() {
             <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
             <div className="text-center">
               <span className="block text-sm text-center text-gray-500">
-                © 2023 Hashiru. All Rights Reserved. Built with{" "}
-                <a href="https://flowbite.com" className="text-red-600">
-                  Flowbite
+                © 2023 <Link href="/">Hashiru</Link>. All Rights Reserved. Built
+                with{" "}
+                <a href="https://nextjs.org" className="text-red-600">
+                  Next.js 13
                 </a>{" "}
                 and{" "}
                 <a href="https://tailwindcss.com" className="text-red-600">
                   Tailwind CSS
                 </a>
-                . UI Reference:{" "}
+                . Landing Reference:{" "}
                 <a
                   href="https://github.com/themesberg/landwind"
                   className="text-red-600"
@@ -700,6 +702,8 @@ export default function Home() {
                 <li>
                   <a
                     href="https://github.com/GDSC-HKUST/Hashiru"
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-gray-500 hover:text-gray-900:text-white"
                   >
                     <svg

@@ -8,7 +8,7 @@ import {
 import { useState } from "react";
 
 export default function Accordion() {
-  const [expandedIndex, setExpandedIndex] = useState(0);
+  const [expandedIndex, setExpandedIndex] = useState(0 as number | undefined);
   const data = [
     {
       title: "Is Hashiru open-source?",
@@ -42,7 +42,7 @@ export default function Accordion() {
             <button
               type="button"
               className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900 bg-white border-b border-gray-200"
-              onClick={() => setExpandedIndex(i)}
+              onClick={() => setExpandedIndex((x) => (x === i ? undefined : i))}
             >
               <span>{x.title}</span>
               {expandedIndex === i ? (
