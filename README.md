@@ -25,5 +25,6 @@ Your feedback and contributions are welcome! Please follow the [Google TypeScrip
 
 ## Credits
 
+- Heroicons: <https://heroicons.dev>
 - Landing page: <https://github.com/themesberg/landwind>
 - Dashboard: <https://github.com/themesberg/tailwind-dashboard-windster>

@@ -5,7 +5,7 @@ import {
   ChevronDownIcon,
   ChevronUpIcon,
 } from "@heroicons/react/24/solid";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 export default function Accordion() {
   const [expandedIndex, setExpandedIndex] = useState(0 as number | undefined);
@@ -37,7 +37,7 @@ export default function Accordion() {
       data-inactive-classes="text-gray-500"
     >
       {data.map((x, i) => (
-        <>
+        <Fragment key={i}>
           <h3 id="accordion-flush-heading-1">
             <button
               type="button"
@@ -55,7 +55,7 @@ export default function Accordion() {
           <div id="accordion-flush-body-1" hidden={expandedIndex !== i}>
             <div className="py-5 border-b border-gray-200">{x.description}</div>
           </div>
-        </>
+        </Fragment>
       ))}
     </div>
   );

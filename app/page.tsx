@@ -32,6 +32,12 @@ export default function Home() {
               </p>
               <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
                 <a
+                  href="/login"
+                  className="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-white bg-red-700 rounded-lg sm:w-auto hover:bg-red-800 focus:ring-4 focus:ring-red-300 lg:mr-0:bg-red-700 focus:outline-none:ring-red-800"
+                >
+                  Get Started
+                </a>
+                <a
                   href="https://github.com/GDSC-HKUST/Hashiru"
                   className="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100:bg-gray-700:ring-gray-800"
                 >
@@ -93,12 +99,6 @@ export default function Home() {
                     />
                   </svg>{" "}
                   Get Figma file
-                </a>
-                <a
-                  href="/login"
-                  className="inline-flex items-center justify-center w-full sm:w-auto px-5 py-3 mb-2 mr-2 text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0:bg-red-700 focus:outline-none:ring-red-800"
-                >
-                  Get Started
                 </a>
               </div>
             </div>
